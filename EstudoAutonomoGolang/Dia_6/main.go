@@ -1,3 +1,11 @@
+// Neste Dia meu objetivo foi aprender a implementar struct e slice criando um pequeno sistema onde consigo:
+//Armazenar Jogadores
+//Identificar o artilheiro
+//Calcular o total de gols
+
+//Pode parecer simples,mas sempre na busca de construir uma base solida todos os dias.
+
+//🚀 Consistência > Intensidade
 package main
 
 import "fmt"
@@ -48,4 +56,5 @@ func totalGols(Jogadores []Jogador){
 		somaGols += Jogador.Gols 
 	}
 	fmt.Println("Total de gols de todos os jogadores ", somaGols)
+
 }
