@@ -1,4 +1,4 @@
-//Nesse codigo estou aprendendo a aplicar a função retornando valor sem realizar a exibição direta, dividindo a tarefa com a main
+//Nesse codigo estou aprendendo a aplicar a função retornando valor sem realizar a exibição direta, dividindo a tarefa com a main 
 
 package main
 
@@ -17,4 +17,5 @@ func main() {
 	
 	mediaCalculada := media(numero1, numero2, numero3)
 	fmt.Println("Media: ", mediaCalculada)
+
 }
