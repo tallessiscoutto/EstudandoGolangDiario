@@ -5,29 +5,27 @@ import (
 )
 
 type Notificador interface {
-	Enviar()
+	Enviar(Mensagem string)
 }
 type Email struct {
-	mens string
 }
 type SMS struct {
-	mens string
 }
 
-func (e *Email) Enviar() {
-	fmt.Println(e.mens)
+func (e *Email) Enviar(Mensagem string) {
+	fmt.Println(Mensagem)
 }
-func (s *SMS) Enviar() {
-	fmt.Println(s.mens)
+func (s *SMS) Enviar(Mensagem string) {
+	fmt.Println(Mensagem)
 }
 
-func notificar(n Notificador) {
-	n.Enviar()
+func notificar(n Notificador, Mensagem string) {
+	n.Enviar(Mensagem)
 }
 
 func main() {
-	e1 := Email{"Oi enviado por Email"}
-	s1 := SMS{"Oi enviado por SMS"}
-	notificar(&e1)
-	notificar(&s1)
+	e1 := Email{}
+	s1 := SMS{}
+	notificar(&e1, "Oi enviado por email")
+	notificar(&s1, "Oi enviado por SmS")
 }
