@@ -51,9 +51,6 @@ func main() {
 			criarProduto(w, r)
 		}
 	})
-
-	http.HandleFunc("/produtos", listarProdutos)
-
 	fmt.Println("Servidor rodando em :8080")
 	http.ListenAndServe(":8080", nil)
 }
